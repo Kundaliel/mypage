@@ -25,5 +25,24 @@
         <script type="text/javascript" src="js/rpg_windows.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+        <script>
+            function goFullScreen() {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) { 
+                    document.documentElement.webkitRequestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) { 
+                    document.documentElement.msRequestFullscreen();
+                }
+            }
+
+ 
+            window.onload = function() {
+                goFullScreen();
+            };
+        </script>
     </body>
 </html>
