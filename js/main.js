@@ -4,6 +4,7 @@
 
 PluginManager.setup($plugins);
 
-window.onload = function() {
+window.addEventListener("load", function() {
+    Graphics._switchFullScreen();
     SceneManager.run(Scene_Boot);
-};
+});
