@@ -1757,7 +1757,7 @@ Graphics.initialize = function(width, height, type) {
     this._loadingImage = null;
     this._loadingCount = 0;
     this._fpsMeterToggled = false;
-    this._stretchEnabled = this._defaultStretchMode();
+    this._stretchEnabled = true;
 
     this._canUseDifferenceBlend = false;
     this._canUseSaturationBlend = false;
